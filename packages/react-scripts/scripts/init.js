@@ -367,6 +367,12 @@ module.exports = function (
   // Change displayed command to yarn instead of yarnpkg
   const displayedCommand = useYarn ? 'yarn' : 'npm';
 
+  console.log(chalk.red('VERY IMPORTANT:'));
+  console.log('This is a forked version of react-scripts that allows import');
+  console.log('of TS files from other packages. When react-scripts implements');
+  console.log('a way, move back to the original version.');
+  console.log();
+
   console.log();
   console.log(`Success! Created ${appName} at ${appPath}`);
   console.log('Inside that directory, you can run several commands:');
